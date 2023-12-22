@@ -1,0 +1,22 @@
+public class ArrayMagic{ 
+    public static void arrayFunction(int numberIn, int[] numbersIn) { 
+        numberIn = 200;
+        for(int i = 0; i < numbersIn.length; i++){
+            if(i % 2 == 0){
+                numbersIn[i] = numberIn;
+            }
+        }
+    }
+
+    public static void main(String[] args) { 
+        int number = 2; 
+        int[] numbers = {1, 2, 3, 4, 5}; 
+        arrayFunction(number, numbers); 
+
+        // What is printed here?
+        System.out.print("number is " + number + ", "); 
+        System.out.print("numbers is [" + numbers[0] + ", " + 
+                          numbers[1] + ", "+ numbers[2] + ", " 
+                          + numbers[3] + ", " + numbers[4] + "]"); 
+    } 
+}
